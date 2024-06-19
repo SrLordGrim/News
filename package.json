@@ -1,0 +1,41 @@
+{
+    "name": "Meteor",
+    "version": "1.0.0",
+    "description": "Blog based website",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+        "devserver": "live-server",
+        "start": "npm-run-all --parallel devserver watch:sass",
+        "compile:sass": "node-sass assets/sass/main.scss assets/css/style.comp.css",
+        "concat:css": "concat -o assets/css/style.concat.css assets/css/normalize.css assets/css/style.comp.css",
+        "prefix:css": "postcss -u autoprefixer -b\"last 5 versions\" assets/css/style.concat.css -o assets/css/style.prefix.css",
+        "compress:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
+        "minify:js": "uglifyjs assets/js/main.js --compress --mangle --warn --output assets/js/main.js",
+        "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css minify:js",
+        "concat:bcss": "concat -o assets/css/bootstrap.min.css node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "concat:bjs": "concat -o assets/js/bootstrap.min.js node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "concat:fontawesome": "concat -o assets/fontawesome/css/fontawesome.all.min.css node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+        "concat:normalize": "concat -o assets/css/normalize.css node_modules/normalize.css/normalize.css",
+        "concat:jquery": "concat -o assets/js/jquery.min.js node_modules/jquery/dist/jquery.min.js",
+        "concat:popper": "concat -o assets/js/popper.min.js node_modules/popper.js/dist/popper.min.js",
+        "build:bootstrap": "npm-run-all concat:bcss concat:bjs concat:fontawesome concat:normalize concat:jquery concat:popper"
+    },
+    "author": "Mahmudul Hasan Bijoy",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "concat": "^1.0.3",
+        "node-sass": "^4.14.1",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^7.1.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.14.0",
+        "bootstrap": "^4.5.2",
+        "jquery": "^3.5.1",
+        "normalize.css": "^8.0.1",
+        "popper.js": "^1.16.1",
+        "uglify-js": "^3.10.3"
+    }
+}
