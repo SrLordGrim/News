@@ -493,105 +493,15 @@
 <!--===========================
     FOOTER
 ============================-->
-<footer class="footer">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-    <div class="wrapper">
-        <div class="footer__flex">
-          <div class="footer__logo">
-            <a class="navbar-brand" href="#">
-              <img src="assets/img/LogoPressNa.png" alt="Footer Logo" class="main-nav__logo img-res">
-            </a>
-          </div>
-
-          <div class="footer__menu">
-            <ul class="footer__ul" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-              <li>
-                <a class="footer__links" href="#">Noticias</a>
-              </li>
-              <li>
-                <a class="footer__links" href="#">Cultura</a>
-              </li>
-              <li>
-                <a class="footer__links" href="#">Columnas</a>
-              </li>
-              <li>
-                <a class="footer__links" href="#">Farándula</a>
-              </li>
-            </ul>
-          </div> <!-- footer__menu -->
-          
-          <li class="footer__dropdown nav-item dropdown" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
-            <a class="footer__links dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Español
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">中文</a>
-            </div>
-          </li>
-        </div> <!-- footer__flex -->
-    </div> <!-- wrapper -->
-  </nav>
-  <div class="wrapper">
-      <div class="footer-grid">
-        
-        <div class="footer__column" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
-          <p class="footer__para">
-            Hacemos periodismo de forma independiente para que te de poder.
-          </p>
-        </div> <!-- footer__column -->
-        <div class="footer__column">
-          <ul class="footer__lists" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">
-            <li class="footer__li"><a href="#">Mundo</a></li>
-            <li class="footer__li"><a href="#">Panamá</a></li>
-            <li class="footer__li"><a href="#">Política</a></li>
-            <li class="footer__li"><a href="#">Tecnología</a></li>
-          </ul>
-        </div> <!-- footer__column -->
-        <div class="footer__column">
-          <ul class="footer__lists" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
-            <li class="footer__li"><a href="#">Libros</a></li>
-            <li class="footer__li"><a href="#">Películas</a></li>
-            <li class="footer__li"><a href="#">Música</a></li>
-            <li class="footer__li"><a href="#">Teatro</a></li>
-            <li class="footer__li"><a href="#">Fotografía</a></li>
-          </ul>
-        </div> <!-- footer__column -->
-        <div class="footer__column">
-          <ul class="footer__lists" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">
-            <li class="footer__li"><a href="#">Times</a></li>
-          </ul>
-        </div> <!-- footer__column -->
-        <div class="footer__column">
-          <ul class="footer__lists" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
-            <li class="footer__li"><a href="#">Farándula</a></li>
-          </ul>
-        </div> <!-- footer__column -->
-      </div> <!-- footer-grid -->
-      <div class="footer__icons" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="500">
-            <div class="footer__icons-items footer__icons-ins"><a href="#"><i class="fab fa-instagram"></i></a></div>
-            <div class="footer__icons-items footer__icons-twt"><a href="#"><i class="fab fa-twitter"></i></a></div>
-            <div class="footer__icons-items footer__icons-yt"><a href="#"><i class="fab fa-youtube"></i></a></div>
-      </div>
-
-      <div class="footer__end">
-        <div class="footer__end-left">
-          <h5>Prensa Nacional</h5>
-        </div>
-        <div class="footer__end-right">
-          <p class="footer__copyright">
-            Prensa Nacional | Todos los Derechos Reservados.
-          </p>
-          <p class="footer__copyright">
-            Periodismo que te da poder.
-          </p>
-        </div>
-      </div>
-      <div class="footer__end-right--menu">
-        <a href="#" class="footer__links">Términos de Uso</a>
-      </div>
-  </div> <!-- wrapper -->
+<footer>
+    <div id="footer"></div>
 </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $("#footer").load("/footer.html"); 
+    });
+  </script>
 
   <!-- jQuery & Custom javaScript -->
   <script src="assets/js/jquery.min.js"></script>
