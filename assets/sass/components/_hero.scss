@@ -1,0 +1,47 @@
+.hero {
+  color: $white;
+  z-index: 1;
+  &__blog {
+    &:first-child {
+      background-image: linear-gradient(to right bottom, $pink, $pink-light);
+    }
+    &:nth-child(2) {
+      background-image: linear-gradient(to right bottom, $brown, $brown-light);
+    }
+    &:last-child {
+      background-image: linear-gradient(to right bottom, $pink, $blue);
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    &-cat1,
+    &-cat2,
+    &-cat3 {
+      margin-right: 1rem;
+      padding: 0.3rem;
+    }
+    &-cat1 {
+      background-color: $pink-light;
+    }
+    &-cat2 {
+      background-color: $brown-light;
+    }
+    &-cat3 {
+      background-color: $blue-light;
+    }
+  }
+  &__figcaption {
+    padding: 1rem 0;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  &__author {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,19 @@
+.widgets {
+  color: $black;
+  display: flex;
+  align-items: center;
+  &__img {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__content {
+    margin-left: 1.5rem;
+  }
+  &__title {
+    font-size: 1.6rem;
+  }
+  &__author {
+    font-size: 1rem;
+    color: $grey;
+  }
+}

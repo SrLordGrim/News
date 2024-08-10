@@ -1,0 +1,110 @@
+.social-icon {
+  margin-top: 2rem;
+  color: $white;
+  font-size: 1.2rem;
+  text-align: center;
+  @include respond(phone) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+  &:hover a {
+    text-decoration: none;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+  }
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100px;
+    transition: 0.3s all;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+  &__flex {
+    padding: 3rem;
+    @include respond(phone) {
+      padding: 1.5rem;
+    }
+  }
+
+  &__fb {
+    background-color: $fb;
+    i {
+      background-color: $fb-light;
+    }
+  }
+  &__ins {
+    background-color: $ins;
+    i {
+      background-color: $ins-light;
+    }
+  }
+  &__twt {
+    background-color: $twt;
+    i {
+      background-color: $twt-light;
+    }
+  }
+  &__gplus {
+    background-color: $gplus;
+    i {
+      background-color: $gplus-light;
+    }
+  }
+  &__yut {
+    background-color: $yut;
+    i {
+      background-color: $yut-light;
+    }
+  }
+  &__drb {
+    background-color: $drb;
+    i {
+      background-color: $drb-light;
+    }
+  }
+  &__big {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    display: inline-block;
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+  }
+}
+.posts {
+  box-shadow: $shadow-light;
+  padding: 1.5rem;
+  &__title {
+    color: $pink;
+    background-image: linear-gradient(to right, $pink, $pink-light);
+    background-clip: text;
+    color: transparent;
+  }
+  [class*=" imghvr-"] figcaption,
+  [class^="imghvr-"] figcaption {
+    background-image: linear-gradient(to left bottom, $brown, $brown-light);
+  }
+}
+
+.adv {
+  font-size: 1.5rem;
+  color: $white;
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+  background-image: linear-gradient(to bottom, $yut, $yut-light);
+  padding: 5rem 1rem;
+  @include respond(phone) {
+    padding: 2rem 1rem;
+  }
+}

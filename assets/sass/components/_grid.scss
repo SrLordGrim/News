@@ -1,0 +1,56 @@
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: (4fr 1fr);
+  @include respond(tab-port) {
+    grid-template-columns: (3fr 2fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+  grid-gap: 2rem;
+  justify-content: center;
+}
+.blog__2columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+}
+.widgets-grid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.social-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+  grid-gap: 0.5rem;
+}
+.advertisement {
+  @include respond(phone) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer-grid {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8rem;
+  }
+}
