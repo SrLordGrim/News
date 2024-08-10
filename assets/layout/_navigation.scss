@@ -1,0 +1,100 @@
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10rem;
+  right: 3rem;
+  z-index: 2;
+  display: none;
+  i {
+    color: $pink-light;
+  }
+  @include respond(phone) {
+    display: block;
+  }
+}
+/* NAV */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+  font-size: 1.3rem;
+  z-index: 99999;
+  &__logo {
+    width: 10rem;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    margin-left: 2rem;
+    @include respond(phone) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to left bottom, $pink, $pink-light);
+      width: 50%;
+      height: 100%;
+      transform: translateX(-500px);
+      transition: transform 0.5s ease-in-out;
+      border-right: 1px solid $pink-light;
+      opacity: 0.9;
+      padding: 3rem;
+      z-index: 99999;
+    }
+    &.show {
+      transform: translateX(-20px);
+    }
+  }
+  &__lists {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    list-style: none;
+    transition: 0.3s all;
+    &:hover {
+      background-color: $header;
+    }
+    @include respond(phone) {
+      padding: 2rem 1rem;
+      border-bottom: 1px solid $pink-light;
+      font-size: 1.8rem;
+      letter-spacing: 0.5px;
+      &:last-child {
+        border-bottom: 0;
+      }
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &__links {
+    color: $pink-light;
+    padding-bottom: 2px;
+    transition: 0.3s all;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    @include respond(phone) {
+      color: $white;
+    }
+  }
+  &__search {
+    li {
+      list-style: none;
+    }
+    i {
+      color: $pink-light;
+      font-size: 1.5rem;
+    }
+    @include respond(phone) {
+      margin-right: 8rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.header {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  background-color: $header;
+  color: $grey-light;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  &__ul {
+    display: flex;
+    list-style: none;
+  }
+  &__lists {
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+  &__right {
+    &-user {
+      margin-left: 5rem;
+    }
+  }
+  &__links {
+    color: $grey-light;
+    transition: 0.3s all;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
