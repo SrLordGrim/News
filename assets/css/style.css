@@ -1116,12 +1116,12 @@ body {
   text-decoration: none;
 }
 
-.main-nav__linksDEFINIR {
+.main-nav__linksPROGRAMAS {
   color: #758fcd;
   padding-bottom: 2px;
   transition: 0.3s all;
 }
-.main-nav__linksDEFINIR:hover {
+.main-nav__linksPROGRAMAS:hover {
   color: #fff;
   text-decoration: none;
 }
