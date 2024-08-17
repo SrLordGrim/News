@@ -1075,15 +1075,57 @@ body {
     background-color: transparent;
   }
 }
-.main-nav__links {
+
+.main-nav__linksNOTICIAS {
   color: #c93dee;
   padding-bottom: 2px;
   transition: 0.3s all;
 }
-.main-nav__links:hover {
+.main-nav__linksNOTICIAS:hover {
   color: #fff;
   text-decoration: none;
 }
+
+.main-nav__linksCULTURA {
+  color: #89ff4a;
+  padding-bottom: 2px;
+  transition: 0.3s all;
+}
+.main-nav__linksCULTURA:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav__linksCOLUMNAS {
+  color: #ffa980;
+  padding-bottom: 2px;
+  transition: 0.3s all;
+}
+.main-nav__linksCOLUMNAS:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav__linksESPECIALES {
+  color: #e8a0e5;
+  padding-bottom: 2px;
+  transition: 0.3s all;
+}
+.main-nav__linksESPECIALES:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav__linksDEFINIR {
+  color: #758fcd;
+  padding-bottom: 2px;
+  transition: 0.3s all;
+}
+.main-nav__linksDEFINIR:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 37.5em) {
   .main-nav__links {
     color: #fff;
