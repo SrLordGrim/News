@@ -756,6 +756,12 @@ body {
 .social-icon__drb i {
   background-color: #5e83ac;
 }
+.social-icon__wsp {
+  background-color: #25D366;
+}
+.social-icon__wsp i {
+  background-color: #128C7E;
+}
 .social-icon__big {
   margin: 0.5rem 0;
   font-size: 1.8rem;
