@@ -927,6 +927,12 @@ body {
 .footer__icons-twt:hover {
   background-color: #59b8e7;
 }
+.footer__icons-wsp {
+  background-color: #25D366;
+}
+.footer__icons-wsp:hover {
+  background-color: #128C7E;
+}
 .footer__icons-gplus {
   background-color: #dd4c39;
 }
