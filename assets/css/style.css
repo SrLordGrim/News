@@ -549,17 +549,20 @@ body {
   color: transparent;
   font-weight: bold;
 }
-.blog__header-title--1 {
+.blog__headerNOTICIAS {
   background-image: linear-gradient(to right, #3a0648, #c93dee);
 }
-.blog__header-title--2 {
+.blog__headerCULTURA {
   background-image: linear-gradient(to right, #318e00, #89ff4a);
 }
-.blog__header-title--3 {
+.blog__headerCOLUMNAS {
   background-image: linear-gradient(to right, #f75000, #ffa980);
 }
-.blog__header-title--4 {
+.blog__headerESPECIALES {
   background-image: linear-gradient(to right, #c02fbb, #e8a0e5);
+}
+.blog__headerPROGRAMAS {
+  background-image: linear-gradient(to right, #3b59a1, #758fcd);
 }
 .blog__tag {
   display: flex;
