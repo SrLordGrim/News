@@ -669,6 +669,9 @@ body {
 .blog__titleESPECIALES {
   background-image: linear-gradient(to right, #c02fbb, #e8a0e5);
 }
+.blog__titlePERSONAL {
+  background-image: linear-gradient(to right, #2d71ad, #d0d0d0);
+}
 .blog__author {
   font-size: 1rem;
   color: #999;
@@ -690,6 +693,9 @@ body {
 }
 .widgets__title {
   font-size: 1.6rem;
+}
+.widgets__titlePERSONAL {
+  background-image: linear-gradient(to right, #2d71ad, #d0d0d0);
 }
 .widgets__author {
   font-size: 1rem;
