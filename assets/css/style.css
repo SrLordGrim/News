@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 main {
   display: block;
@@ -514,6 +515,8 @@ body {
     grid-gap: 1rem;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    height: auto;
   }
 }
 .footer-grid {
@@ -1165,4 +1168,9 @@ body {
   .main-nav__search {
     margin-right: 8rem;
   }
+}
+
+.img-res {
+  width:100%;
+  height: auto;
 }
