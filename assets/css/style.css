@@ -5,7 +5,6 @@ html {
 }
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 main {
   display: block;
@@ -1168,9 +1167,4 @@ body {
   .main-nav__search {
     margin-right: 8rem;
   }
-}
-
-.img-res {
-  width:100%;
-  height: auto;
 }
