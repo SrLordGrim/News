@@ -695,7 +695,7 @@ body {
   font-size: 1.6rem;
 }
 .widgets__titlePERSONAL {
-  color: linear-gradient(to right, #2d71ad, #d0d0d0);
+  color: #2d71ad;
 }
 .widgets__author {
   font-size: 1rem;
