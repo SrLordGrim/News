@@ -801,7 +801,7 @@ body {
 }
 .posts__title {
   color: #3a0648;
-  background-image: linear-gradient(to right, #3a0648, #c93dee);
+  background-image: linear-gradient(to right, #2d71ad, #d0d0d0);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
