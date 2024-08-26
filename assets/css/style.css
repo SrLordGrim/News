@@ -514,8 +514,6 @@ body {
     grid-gap: 1rem;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    height: auto;
   }
 }
 .footer-grid {
