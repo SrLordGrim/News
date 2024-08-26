@@ -610,7 +610,7 @@ body {
   background-image: linear-gradient(to right, #3b59a1, #758fcd);
 }
 .blog__img {
-  width: 50%;
+  width: 100%;
   height: 35rem;
 }
 .blog__flex {
