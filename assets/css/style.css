@@ -452,6 +452,9 @@ body {
 .hero__flex-catCULTURA {
   background-color: #478f00;
 }
+.hero__titular {
+  color: #ffffff
+}
 .hero__figcaption {
   padding: 1rem 0;
 }
