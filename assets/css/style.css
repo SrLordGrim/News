@@ -414,14 +414,20 @@ body {
   color: #fff;
   z-index: 1;
 }
-.hero__blog:first-child {
+.hero__blog_NOTICIAS {
   background-image: linear-gradient(to right bottom, #3a0648, #c93dee);
 }
-.hero__blog:nth-child(2) {
+.hero__blog_COLUMNAS {
   background-image: linear-gradient(to right bottom, #f75000, #ffa980);
 }
-.hero__blog:last-child {
+.hero__blog_PROGRAMAS {
   background-image: linear-gradient(to right bottom, #3a0648, #3b59a1);
+}
+.hero__blog_CULTURA {
+  background-image: linear-gradient(to right bottom, #318e00, #ffa980);
+}
+.hero__blog_ESPECIALES {
+  background-image: linear-gradient(to right bottom, #c02fbb, #89ff4a);
 }
 .hero__flex {
   display: flex;
