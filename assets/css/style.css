@@ -424,10 +424,10 @@ body {
   background-image: linear-gradient(to right bottom, #3a0648, #3b59a1);
 }
 .hero__blog_CULTURA {
-  background-image: linear-gradient(to right bottom, #318e00, #ffa980);
+  background-image: linear-gradient(to right bottom, #318e00, #89ff4a);
 }
 .hero__blog_ESPECIALES {
-  background-image: linear-gradient(to right bottom, #c02fbb, #89ff4a);
+  background-image: linear-gradient(to right bottom, #c02fbb, #e8a0e5);
 }
 .hero__flex {
   display: flex;
