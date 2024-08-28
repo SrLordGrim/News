@@ -33,7 +33,15 @@
 
 <body>
 
-  <header></header>
+  <div id="header-placeholder"></div>
+<script>
+  fetch('/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
   
 <!--===========================
     BLOG
@@ -284,6 +292,5 @@
   <script src="../../../assets/js/bootstrap.min.js"></script>
   <script src="../../../assets/js/main.js"></script>
 
-  <script src="/script.js"></script>
 </body>
 </html>
