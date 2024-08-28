@@ -684,6 +684,30 @@ body {
 .blog__titlePERSONAL {
   background-image: linear-gradient(to right, #2d71ad, #d0d0d0);
 }
+.blog__titleNOTICIAS: hover {
+  color: #fff;
+  text-decoration: none;
+}
+.blog__titleCOLUMNAS: hover {
+  color: #fff;
+  text-decoration: none;
+}
+.blog__titlePROGRAMAS: hover {
+  color: #fff;
+  text-decoration: none;;
+}
+.blog__titleCULTURA: hover {
+  color: #fff;
+  text-decoration: none;
+}
+.blog__titleESPECIALES: hover {
+  color: #fff;
+  text-decoration: none;
+}
+.blog__titlePERSONAL: hover {
+  color: #fff;
+  text-decoration: none;
+}
 .blog__author {
   font-size: 1rem;
   color: #999;
