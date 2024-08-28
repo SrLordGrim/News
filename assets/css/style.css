@@ -461,6 +461,9 @@ body {
 .hero__titular {
   color: #ffffff
 }
+.hero__titular:hover {
+  color: #ffffff
+}
 .hero__figcaption {
   padding: 1rem 0;
 }
