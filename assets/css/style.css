@@ -408,7 +408,7 @@ body {
 }
 .img-res {
   max-width: 100%;
-  height: auto;
+  height: 65px;
 }
 .hero {
   color: #fff;
