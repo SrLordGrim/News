@@ -408,6 +408,10 @@ body {
 }
 .img-res {
   max-width: 100%;
+  height: auto;
+}
+.img-res logo {
+  max-width: 100%;
   height: 65px;
 }
 .hero {
